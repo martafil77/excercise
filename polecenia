@@ -1,0 +1,28 @@
+gitt add - używamy żeby dodać do swojego repoztorium plik lub katalog plików ze zmianami innej osoby, lub swoje. Gdyby w pliku zaszły nowe zmiany to znów musimy użyć tej komendy, żeby mieć aktualną wersję pliku.
+
+gitt push - dodawanie swoich zmian do serwera. Dodawanie swojego zmienionego pliku do repozytorium zdalnego (tego w GitHub)
+
+gitt commit - zatwierdzanie zmian.
+
+origin - domyślna nazwa repozytorium zdalnego (tego mojego na komputerze)
+
+master - domyślna nazwa repozytorium lokalnego (tego na GitHubie). powstaje po sklonowaniu repozytorium.
+
+git clone - klonowanie już istniejącego repozytorium do siebie na komputer.
+
+git status - można sprawdzić na jakim etapie jest nasz plik. Czy zatwierdziliśmy zmiany czy nie. Czy dodaliśmy do serwera czy nie.
+
+
+Nie rozumiem pojęcia "migawka". To jest stan danego pliku? Np. migawka 1 to mój plik na początku, a jak naniosę w nim zmiany to już będzie to migawka 2?
+Nie mogłam też znaleźć wyjaśnienia "-m" i "-u" . Nie wiem o co chodzi z tymi literami.
+
+
+
+Schemat postępowania to:
+
+1. git clone - klonuję repozytorium na swój komputer
+2. git add - dodaję swój zmieniony lub nowy plik
+3. git commit - zatwierdzam zmianę
+4. git push origin master - wysyłam swój plik, który jest jako origin, do serwera (do GitHub np.) który jest jako master.
+
+gdybym po commit wprowadziła jakieś zmiany w pliku to bym musiała jeszcze raz użyć git add, ale jeśli mi coś nie poszło, ale nie zmieniałam niz w pliku to nie muszę do dodawać jeszcze raz, bo on jest zapamiętany taki jaki był.
