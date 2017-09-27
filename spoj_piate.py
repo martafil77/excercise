@@ -1,45 +1,31 @@
 from sys import stdout
 
-x = 3
-a = 3
-b = 4
 
-for pattern in range(x):
+def zadanie(x, a, b):
+  for pattern in range(x):
     for wiersz in range(a):
         for kolumna in range(b):
-            if wiersz != 0 and kolumna != 0 and kolumna != b - 1:
+            if wiersz != 0 and kolumna % 3 != 0 and kolumna != b - 1:
                 stdout.write(".")
             else:
                 stdout.write("*")
         stdout.write("\n")
-print ("*" * b)
-print
-c = 4
-d = 3
-e = 13
+  print ("*" * b)
+  print
 
-for pattern in range(c):
-    for wiersz in range(d):
-        for kolumna in range(e):
-            if wiersz != 0 and kolumna != 0 and kolumna != e - 1 and kolumna != 3 and kolumna != 6 and kolumna != 9:
-                stdout.write(".")
-            else:
-                stdout.write("*")
-        stdout.write("\n")
-print ("*" * e)
-print
+zadanie(3, 3, 4)
+zadanie(4, 3, 13)
+zadanie(2, 3, 16)
 
-f = 2
-g = 3
-h = 16
-
-for pattern in range(f):
-    for wiersz in range(g):
-        for kolumna in range(h):
-            if wiersz != 0 and kolumna != 0 and kolumna != h - 1 and kolumna != 3 and kolumna != 6 and kolumna != 9 and kolumna != 12:
-                stdout.write(".")
-            else:
-                stdout.write("*")
-        stdout.write("\n")
-print ("*" * h)
-print
+#rozwiązanie Skiby
+#for i in range(int(raw_input())):
+    #a, b = map(int, raw_input().strip().split(' '))
+    #w = 1 + 3 * b
+    #patt = '*' + '..*' * b
+    #line = '*' * w
+    #print line
+    #for _ in range(a):
+        #print patt
+        #print patt
+        #print line
+    #print 
